@@ -48,20 +48,18 @@
         <h1 class="mainHeader">Clayton Helfert's Astrophotography</h1>
     
     <!--WEATHER FORECAST WIDGET-->
-        
-        <a class="weatherwidget-io" href="https://forecast7.com/en/34d70n86d75/madison/" data-label_1="MADISON" data-label_2="WEATHER" data-font="Helvetica" data-icons="Climacons Animated" data-theme="dark" data-suncolor="#f0f419" >MADISON WEATHER</a>
+<a class="weatherwidget-io" href="https://forecast7.com/en/34d70n86d75/madison/?unit=us" data-label_1="MADISON" data-label_2="WEATHER" data-font="Helvetica" data-icons="Climacons Animated" data-theme="dark" >MADISON WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
         
         <!--Light Pollution Map-->
         <div id="conditionscontainer">
-            <script type="text/javascript" src="http://moonphases.co.uk/js/widget.js" id="moonphase_widget" widget="wide" lat="" lng="" date="" tz=""></script>
-            <img src="pictures/lightpollution.png"  class="lightPollution">
             <!--Moon phase widget-->
-          
- 
+      <!-- © wdisseny --><div id="contain_moon" style="text-align:center;padding-bottom:25px;"><div style="font-weight:bold"></div><div style="margin-bottom:-75px;padding:150px;filter:drop-shadow(0 0 150px hsl(0,100%,0%))"></div><div>.</div><div style="font-size:small">.</div></div><script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=500&lightColor=rgb(150,150,150)&shadeColor=rgb(17,17,17)&t&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="500px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="Next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
+
         </div>
+        <br><br><br><br><br><br><br>
                                <p>
             Every picture has been taken in Southeast Madison, Alabama which is currently rated 6 on the Bortle light pollution scale.
             </p>
