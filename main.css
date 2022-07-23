@@ -18,6 +18,8 @@ body {
     padding: 2em 2em 4em;
     z-index: 1;
     margin-top: 0px;
+    min-height: 100%;
+    min-width: 100%;
     
 }
 
