@@ -1,13 +1,10 @@
 
 body, html{
   margin: 0;
-  background: #2b2927;
+  background: #dad7cd;
   font-family: 'Poppins', sans-serif;
 }
-h1{
-  text-align: center;
-  color:white;
-}
+
 .container-all{
   width: auto;
   margin: 20px auto;
@@ -66,7 +63,7 @@ img{
   opacity: .7;
 }
 .container:hover span{
-  color:white;
+  color: #dad7cd;
   display: block;
   transition-duration: .3s;
 }
@@ -79,4 +76,13 @@ img{
     .container {
         width: 100%;
     }
+}
+h1{
+    margin-top: 1.3em;
+    font-size: 35px;
+    font-family: "Edu NSW ACT Foundation";
+    line-height: 3.5em;
+    text-align: center;
+    font-size: 55px;
+    color: #344e41;
 }
