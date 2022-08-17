@@ -19,6 +19,8 @@
     <script defer src="/__/firebase/9.9.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/9.9.0/firebase-remote-config-compat.js"></script>
     <script defer src="/__/firebase/9.9.0/firebase-performance-compat.js"></script>
+        <script src="spotlight.bundle.js"></script>
+        <script src="./myscripts.js"></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -52,7 +54,7 @@
 </header>      
         
         <!--TARGET--
-        <div class="target">
+    <div class="target">
 
         <h3 class="targetTitle">THE SAMPLE TARGET</h3>
             
@@ -82,10 +84,38 @@
             </li>
             <p>
                 DESCRIPTION DESCRIPTION
+            </p>
+    </div>
         <!--end of target-->
         
         <!--Main Header-->
         <h1 class="mainHeader">Helfert Astrophotography</h1>
+        
+        <!--Back to top button-->
+        <button onclick="topFunction()" id="backToTopButton" title="Go to top"></button>
+
+        
+        <script>
+//Get the button
+var mybutton = document.getElementById("backToTopButton");
+
+// When the user scrolls down 20px from t he top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
         
         <!--CATEGORIES-->
         
@@ -105,10 +135,10 @@
         <!--Most Recent-->
         <br><br>
         <h2 class="subject">Most Recent</h2>
-        <h3 class="recentTitle">The Veil Nebula</h3>
+        <h3 class="recentTitle">Andromeda</h3>
         <picture>   
-            <a href="pictures/Veil%20Nebula.png">
-            <img src="pictures/Veil%20Nebula.png" alt="Most Recent" style="width: auto" class="targetPicture"/>    
+            <a href="pictures/Andromeda_Final.png">
+            <img src="pictures/Andromeda_Final.png" alt="Most Recent" style="width: auto" class="targetPicture"/>    
             </a>    
         </picture>
         <br><br>
@@ -193,8 +223,8 @@
         <h3 class="targetTitle">The North American and Pelican Nebula</h3>
             
         <picture class="targetPicture">
-            <a href="pictures/Visible%20Light.png">
-            <img src="pictures/Visible%20Light.png" alt="North american and Pelican nebula" style="width: auto" class="targetPicture"/>
+            <a href="pictures/NorthAmericanFinal.png">
+            <img src="pictures/NorthAmericanFinal.png" alt="North american and Pelican nebula" style="width: auto" class="targetPicture"/>
             </a>
         </picture>
             
@@ -336,7 +366,7 @@ This Nebula is a supernova remnant of a star 20 times the size of our sun roughl
         <h2 class="subject">Clusters</h2>
         <!--target-->
         <div class="target">
-        <h3 class="targetTitle">M13, The Great Cluster of Hercules</h3>
+        <h3 class="targetTitle">The Great Cluster of Hercules</h3>
             
         <picture>
             <a href="pictures/M13%20Great%20Globular%20Cluster%20of%20Hercules.png">
@@ -413,5 +443,40 @@ This Nebula is a supernova remnant of a star 20 times the size of our sun roughl
         <br><br>
         <div id="galaxiesJump"></div>
         <h2 class="subject">Galaxies</h2>
+        
+        <!--TARGET-->
+        <div class="target">
+
+        <h3 class="targetTitle">Andromeda</h3>
+            
+        <picture>   
+            <a href="pictures/Andromeda_Final.png">
+            <img src="pictures/Andromeda_Final.png" alt="Andromeda" style="width: auto" class="targetPicture"/>    
+            </a>    
+        </picture>
+            
+            <li>
+            Catalog: M31
+            </li>
+            <li>
+            Discovered: 964
+            </li>
+            <li>
+            Distance from Earth: 2.5 Million lightyears. 
+            </li>
+            <li>
+            Diameter: 220,000 lightyears.
+            </li>
+            <li>
+            Magnitude: 3.44     
+            </li>    
+            <li>
+            Best Visible: Fall
+            </li>
+            <p>
+                Andromeda, or M31 is a barred spiral galaxy located in the Andromeda constellation about 2.5 million lightyears from earth. Discovered around the year 964 by Abd Al-Rahman Al Sufi, Abd recorded Andromeda in his book, “Book of Fixed Stars” as a “nebulous smear” or a “small cloud”. At this time, it was believed that everything was contained within the Milky Way. In the year 1885, a supernova named Nova 1885, was seen in Andromeda, and has been the only one seen in Andromeda since then.  It was only in 1920 did Edwin Hubble prove that this was in fact a galaxy, and that there are billions more just like it. So far, we have determined there are more than 1 trillion stars in the Andromeda galaxy, which beats out the Milky Way by roughly 200 billion, though as our abilities to detect matter more accurately improve over the years, this will change. Andromeda has two distinct satellite galaxies which can be seen directly above and below the galaxy known as M32 (above) and M110 (below). A study was done in 2006 by a team on scientists that determined the Andromeda galaxy was most likely formed 10 billion years ago by collisions of smaller protogalaxies. It is certain that in around 4.5 billion years, Andromeda and the Milky Way will collide. Since galaxies are mostly empty space, it is believed that our solar system won’t be affected and that no stars will collide. This collision will sling galactic matter outside of the galaxies, and will take a few billion years to fully combine. Andromeda and the Milky Way are located in what is called the “Local group”, which is a group of over 30 galaxies within the diameter of roughly 10 million lightyears. M31 and the Milky Way are the two largest, with M33 (Triangulum Galaxy) coming in third. With an apparent magnitude of 3.44, M31 is just bright enough to be seen with the unaided eye.
+            </p>
+        </div>
+        <!--end of target-->
     </body>
 </html>

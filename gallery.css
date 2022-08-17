@@ -9,6 +9,9 @@ body, html{
   width: auto;
   margin: 20px auto;
   height: auto;
+    margin-bottom: 25px;
+    
+  
 }
 .container{
   width: calc(33% - 6px);

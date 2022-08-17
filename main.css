@@ -247,3 +247,31 @@ ul.navbar{
     font-family: "Edu NSW ACT Foundation";
     letter-spacing: .2em;   
 }
+#backToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+border: #3a5a40 1px solid;
+  outline: none;
+    align-items: center;
+    padding: 35px;
+    margin: auto;
+  cursor: pointer;
+  border-radius: 50%;
+    font-family: "Edu NSW ACT Foundation";
+    background-image: url('pictures/button.png');
+    background-size: contain;
+    background-color: transparent;
+    
+    
+
+
+
+}
+
+#backToTopButton:hover {
+background-image: url ("pictures/button_hover.png");
+    background-size: contain;
+    
