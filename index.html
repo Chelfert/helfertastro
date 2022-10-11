@@ -21,6 +21,7 @@
     <script defer src="/__/firebase/9.9.0/firebase-performance-compat.js"></script>
         <script src="spotlight.bundle.js"></script>
         <script src="./myscripts.js"></script>
+        
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -34,6 +35,8 @@
         <meta name="description" content="A list of Astrophotography targets brought to you by Clayton Helfert.">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="recentgallery.css">
+
     </head>
     
     
@@ -135,20 +138,66 @@ function topFunction() {
         <!--Most Recent-->
         <br><br>
         <h2 class="subject">Most Recent</h2>
-        <h3 class="recentTitle">The Soul Nebula</h3>
+        <h3 class="recentTitle">Pleiades, Wizard Nebula, Full Moon</h3>
         <picture>   
-            <a href="pictures/SoulNebula-final.png">
-            <img src="pictures/SoulNebula-final.png" alt="Most Recent" style="width: auto" class="targetPicture"/>    
+            <a href="pictures/M45.png">
+            <img src="pictures/M45.png" alt="Most Recent" style="width: auto" class="targetPicture"/>    
+            </a>    
+        </picture>
+        <picture>   
+            <a href="pictures/WizardNebula.png">
+            <img src="pictures/WizardNebula.png" alt="Most Recent" style="width: auto" class="targetPicture"/>    
+            </a>    
+        </picture>
+        <picture>   
+            <a href="pictures/Full%20Moon.png">
+            <img src="pictures/Full%20Moon.png" alt="Most Recent" style="width: auto" class="targetPicture"/>    
             </a>    
         </picture>
         <br><br>
         
+        
+        
         <!--Nebulas-->
         <div id="nebulaJump"></div>
         <h2 class="subject">Nebula</h2>
-
+        
         <!--TARGET-->
     <div class="target">
+
+        <h3 class="targetTitle">The Wizard Nebula</h3>
+            
+        <picture>   
+            <a href="pictures/WizardNebula.png">
+            <img src="pictures/WizardNebula.png" alt="Wizard Nebula" style="width: auto" class="targetPicture"/>    
+            </a>    
+        </picture>
+            
+            <li>
+            Catalog: NGC 7380. 
+            </li>
+            <li>
+            Discovered: 1787 by Caroline Herschel.
+            </li>
+            <li>
+            Distance from Earth: 7,000 Lightyears.    
+            </li>
+            <li>
+            Diameter: 40 Lightyears.
+            </li>
+            <li>
+            Magnitude: 7.2    
+            </li>    
+            <li>
+            Best Visible: Early - Late Fall.
+            </li>
+            <p>
+                NGC 7380 or more commonly referred to as the Wizard Nebula, is a cloud of dust around an open star cluster. The Wizard Nebula is located roughly 7,000 Lightyears away in the constellation Cepheus. The open cluster NGC 7380 is in an infantile state, as most of the stars had formed only 5 million years ago. NGC 7380 Is still an active star forming region, and the strong stellar wings coming from the stars within the cloud have given the Wizard Nebula its appearance.
+            </p>
+    </div>
+        <!--end of target-->
+        
+        <!--Main Header-->
         
         <!--TARGET-->
     <div class="target">
@@ -477,6 +526,41 @@ This Nebula is a supernova remnant of a star 20 times the size of our sun roughl
         <br><br>
         <div id="clustersJump"></div>
         <h2 class="subject">Clusters</h2>
+        
+        <!--TARGET-->
+    <div class="target">
+
+        <h3 class="targetTitle">Pleiades</h3>
+            
+        <picture>   
+            <a href="pictures/M45.png">
+            <img src="pictures/M45.png" alt="The Pleiades" style="width: auto" class="targetPicture"/>    
+            </a>    
+        </picture>
+            
+            <li>
+            Catalog: Messier 45.
+            </li>
+            <li>
+            Discovered: Officially, 1610 Galileo Galilei
+            </li>
+            <li>
+            Distance from Earth: 444 Lightyears.    
+            </li>
+            <li>
+            Diameter: Pictured, 8 Lightyears.
+            </li>
+            <li>
+            Magnitude: 1.6    
+            </li>    
+            <li>
+            Best Visible: Late Fall.
+            </li>
+            <p>
+M45, more commonly referred to as The Pleiades or the Seven Sisters, is an open star cluster located about 444 Lightyears away in the constellation of Taurus. The Pleiades name originates from Ancient Greece, where they (Pleiades) are the seven daughters of the Titan Atlas and the ocean Nymph Pleione. During a war, Atlas tried to rebel against Zeus, King of the Gods and was sentenced to forever hold up the heavens on his shoulders. Heartbroken, the seven daughters pleaded with Zeus, who then placed them in the sky to be closer to their Father. The Pleiades was used as an eye test for the Greek army’s rangers. Pleiades has been observed for thousands of years, but was only officially catalogued by Galileo Galilei in 1610. Most of the stars within the cluster were born near the same time. The brighter of the bunch formed within the last 100 million years, and only have a few more hundred million years to go, unlike the billions of years our sun has left. An easy way to find this target is to find Orion’s belt, follow the constellation to Orion’s bow, then find the super bright star Aldebaran and continue that path until you arrive at the Pleiades.            </p>
+    </div>
+        <!--end of target-->
+        
         <!--target-->
         <div class="target">
         <h3 class="targetTitle">The Great Cluster of Hercules</h3>
@@ -522,11 +606,11 @@ This Nebula is a supernova remnant of a star 20 times the size of our sun roughl
         <h3 class="targetTitle">The Moon</h3>
             
         <picture class="targetPicture">
-            <a href="pictures/waxingGibbous.png">
-            <img src="pictures/waxingGibbous.png" alt="Waxing Gibbous Moon" style="width: auto" class="targetPicture"/>
+            <a href="pictures/Full%20Moon.png">
+            <img src="pictures/Full%20Moon.png" alt="Waning Gibbous Moon" style="width: auto" class="targetPicture"/>
                 </a>
         </picture>
-            
+            <li style="list-style: none">Shot with Sky-Watcher 130PDS</li><br>
             <!--bullet points-->
             <li>
             Catalog: Natural Satellite.
